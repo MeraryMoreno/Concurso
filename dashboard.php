@@ -110,20 +110,5 @@ $rol = obtenerRolUsuario();
         </div>
     </div>
 </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <div class="card note-card">
-            <div class="card-body">
-                <h2 class="h5">Estado del proyecto</h2>
-                <p class="mb-0">
-                    La parte funcional principal ya esta implementada. El siguiente enfoque recomendado es cerrar entregables:
-                    README, documento PDF, bitacora y preparacion de la exposicion.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
 
 <?php require_once 'includes/footer.php'; ?>
