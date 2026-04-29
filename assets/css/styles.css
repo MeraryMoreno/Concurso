@@ -1,0 +1,429 @@
+:root {
+    --vino-principal: #7b1e3a;
+    --vino-oscuro: #551127;
+    --vino-profundo: #41101f;
+    --vino-claro: #a44666;
+    --vino-suave: #f8edf1;
+    --vino-borde: #e7cdd6;
+    --texto-principal: #2f2025;
+    --texto-secundario: #755560;
+    --fondo-general: #f7f3f5;
+    --fondo-card: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: var(--texto-principal);
+    background-color: var(--fondo-general) !important;
+}
+
+.navbar.bg-primary {
+    background: linear-gradient(90deg, var(--vino-profundo), var(--vino-principal)) !important;
+    box-shadow: 0 10px 30px rgba(65, 16, 31, 0.18);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.container.py-4 {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+}
+
+.text-muted {
+    color: var(--texto-secundario) !important;
+}
+
+.btn-primary {
+    background-color: var(--vino-principal);
+    border-color: var(--vino-principal);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--vino-oscuro);
+    border-color: var(--vino-oscuro);
+}
+
+.btn-outline-primary {
+    color: var(--vino-principal);
+    border-color: var(--vino-principal);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--vino-principal);
+    border-color: var(--vino-principal);
+}
+
+.btn-outline-light,
+.btn-light {
+    border-radius: 10px;
+}
+
+.btn-outline-light:hover,
+.btn-light:hover {
+    color: var(--vino-oscuro);
+}
+
+.card,
+.card-resumen,
+.login-card {
+    border: 1px solid var(--vino-borde);
+    border-radius: 18px;
+}
+
+.card {
+    background-color: var(--fondo-card);
+    box-shadow: 0 16px 34px rgba(90, 18, 41, 0.08);
+}
+
+.card-resumen {
+    padding: 22px;
+    background-color: var(--fondo-card);
+    height: 100%;
+    box-shadow: 0 12px 28px rgba(123, 30, 58, 0.06);
+    border: 1px solid var(--vino-borde);
+}
+
+.card-resumen h2,
+.card h2,
+h1,
+.h3 {
+    color: var(--vino-oscuro);
+}
+
+.section-block {
+    margin-bottom: 24px;
+}
+
+.section-header {
+    margin-bottom: 14px;
+}
+
+.section-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--vino-oscuro);
+}
+
+.section-text {
+    margin-bottom: 0;
+    color: var(--texto-secundario);
+}
+
+.hero-label,
+.mini-label {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.mini-label {
+    background-color: var(--vino-suave);
+    color: var(--vino-principal);
+    margin-bottom: 10px;
+}
+
+.dashboard-hero {
+    background: linear-gradient(135deg, var(--vino-profundo), var(--vino-principal), var(--vino-claro));
+    border-radius: 24px;
+    padding: 32px;
+    color: #ffffff;
+    box-shadow: 0 22px 40px rgba(90, 18, 41, 0.22);
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero-text {
+    max-width: 700px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.btn-panel {
+    min-width: 160px;
+    font-weight: 600;
+}
+
+.quick-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #ffffff, #fcf7f9);
+    border: 1px solid var(--vino-borde);
+    box-shadow: 0 10px 24px rgba(123, 30, 58, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quick-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 30px rgba(123, 30, 58, 0.12);
+}
+
+.quick-card-title {
+    color: var(--vino-oscuro);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.quick-card-text {
+    color: var(--texto-secundario);
+    font-size: 0.92rem;
+}
+
+.card-rol {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-rol::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, rgba(123, 30, 58, 0.12), transparent 70%);
+}
+
+.note-card {
+    border-left: 5px solid var(--vino-principal);
+}
+
+.alert-info {
+    background-color: var(--vino-suave);
+    border-color: var(--vino-borde);
+    color: var(--vino-oscuro);
+}
+
+.table {
+    background-color: var(--fondo-card);
+}
+
+.table thead th {
+    background-color: var(--vino-suave) !important;
+    color: var(--vino-oscuro);
+    border-bottom: 1px solid var(--vino-borde);
+    font-weight: 700;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #fcf3f6;
+}
+
+.form-control:focus,
+.form-select:focus,
+.btn:focus {
+    border-color: #b65b78;
+    box-shadow: 0 0 0 0.2rem rgba(123, 30, 58, 0.15);
+}
+
+.form-control,
+.form-select {
+    border-radius: 12px;
+    border-color: #dfc3cc;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.badge-estado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.badge-disponible,
+.badge-activo,
+.badge-atendida,
+.badge-resuelto {
+    background-color: #e6f5ea;
+    color: #1f7a42;
+}
+
+.badge-ocupado,
+.badge-pendiente {
+    background-color: #fff3dc;
+    color: #a96a00;
+}
+
+.badge-mantenimiento,
+.badge-reportada,
+.badge-inactivo,
+.badge-cancelado {
+    background-color: #fbe6ec;
+    color: var(--vino-principal);
+}
+
+.badge-proceso,
+.badge-admin {
+    background-color: #f1e6ff;
+    color: #6a35b1;
+}
+
+.badge-academica {
+    background-color: #e7f0ff;
+    color: #1c5db1;
+}
+
+.badge-prefecto,
+.badge-incidencia {
+    background-color: #e7f7f9;
+    color: #156d79;
+}
+
+.badge-secundario {
+    background-color: #efe8eb;
+    color: #6d5961;
+}
+
+.login-wrapper {
+    min-height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 40px;
+}
+
+.login-card {
+    max-width: 1100px;
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    border: 0;
+    box-shadow: 0 24px 50px rgba(65, 16, 31, 0.18);
+}
+
+.login-side {
+    background: linear-gradient(160deg, var(--vino-profundo), var(--vino-principal), var(--vino-claro));
+    color: #ffffff;
+    position: relative;
+}
+
+.login-side::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 35%);
+    pointer-events: none;
+}
+
+.login-side-content {
+    height: 100%;
+    min-height: 420px;
+    padding: 48px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.login-title {
+    color: #ffffff;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 1.15;
+}
+
+.login-text {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 24px;
+    font-size: 1rem;
+    max-width: 420px;
+}
+
+.login-demo-box {
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.login-demo-box ul {
+    padding-left: 18px;
+}
+
+.login-card .card-body {
+    padding: 48px 42px !important;
+}
+
+.login-card .h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--vino-oscuro);
+}
+
+.login-card .form-label {
+    font-weight: 600;
+    color: var(--vino-oscuro);
+}
+
+.login-card .btn-lg {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
+hr {
+    border-color: var(--vino-borde);
+}
+
+@media (max-width: 991px) {
+    .dashboard-hero {
+        padding: 24px;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .login-side-content {
+        padding: 28px 24px;
+        min-height: auto;
+    }
+
+    .login-card .card-body {
+        padding: 30px 24px !important;
+    }
+
+    .login-title {
+        font-size: 1.9rem;
+    }
+}
